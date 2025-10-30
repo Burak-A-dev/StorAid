@@ -9,10 +9,6 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App/>
     <Footer/>
-    <CTAButton logo="facebook" onClick={() => window.open('https://facebook.com', '_blank')} />
-<CTAButton logo="x" onClick={() => window.open('https://twitter.com', '_blank')} />
-<CTAButton logo="instagram" onClick={() => window.open('https://instagram.com', '_blank')} />
-<CTAButton logo="youtube" onClick={() => window.open('https://youtube.com', '_blank')} />
-
-  </StrictMode>,
+    <CTAButton text="Hello"/>
+</StrictMode>
 )
