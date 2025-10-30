@@ -8,7 +8,5 @@ import CTAButton from './components/common/CTAButton'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App/>
-    <Footer/>
-    <CTAButton text="Hello"/>
 </StrictMode>
 )
