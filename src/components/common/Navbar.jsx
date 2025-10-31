@@ -12,7 +12,7 @@ const Navbar = () => {
           <a href="">contact@domain.com</a>
         </div>
 
-        <div className="flex gap-2 text-white">
+        <div className="flex gap-1 text-white p-1">
             <SocialButtons logo="facebook" onClick={() => window.open('https://facebook.com', '_blank')} />
             <SocialButtons logo="x" onClick={() => window.open('https://twitter.com', '_blank')} />
             <SocialButtons logo="instagram" onClick={() => window.open('https://instagram.com', '_blank')} />
@@ -20,7 +20,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="flex items-center flex-[2] justify-between bg-gray-200 px-2 h-40 border-solid outline">
+      <div className="flex items-center flex-[2] justify-between bg-white px-2 h-40 px-6">
         <div>
           <img src={icon} alt="Logo" className="h-18 py-4" />
         </div>
