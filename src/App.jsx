@@ -1,9 +1,6 @@
-import AboutUs from "./components/common/AboutUs";
-
 function App() {
   return (
     <div>
-      <AboutUs/>
     </div>
   );
 }
