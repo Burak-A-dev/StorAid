@@ -1,5 +1,6 @@
 import CTAButton from "./CTAButton";
 import { FaPhoneAlt } from 'react-icons/fa';
+import Tile from "./Tile";
 
 export default function AboutUs({button}) {
   return (
@@ -34,15 +35,17 @@ export default function AboutUs({button}) {
             {/* Vision - Mission */}
             <div className='flex flex-row gap-4'>
 
-            <div className="flex flex-col items-start justify-center w-90 h-30 border-3 border-gray-200 rounded-md p-3">
-                <h4 className="text-green-950 mb-2 text-lg font-semibold">Vision</h4>
-                <p className="text-green-950 text-base/4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium.</p>
-            </div>
+            <Tile
+              title="Vision"
+              description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium"
+            />
 
-            <div className="flex flex-col items-start justify-center w-90 h-30 border-3 border-amber-400 rounded-md p-3">
-                <h4 className="text-green-950 mb-2 text-lg font-semibold">Mission</h4>
-                <p className="text-green-950 text-base/4">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium.</p>
-            </div>
+            <Tile
+              title="Mission"
+              description="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusan tium doloremque laudantium"
+
+            />
+
             </div>
 
             <div className="flex flex-row gap-18 justify-start mt-8">

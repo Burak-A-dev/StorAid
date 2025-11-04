@@ -1,3 +1,5 @@
+import Tile from "./Tile";
+
 export default function Services() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
@@ -22,19 +24,15 @@ export default function Services() {
 
           <div className="flex flex-col gap-6 w-[300px]"> 
 
-            <div className="flex flex-col items-start justify-center p-6 border-2 border-amber-400 rounded-lg shadow-sm bg-white h-auto">
-              <h4 className="text-gray-900 mb-2 text-xl font-semibold">Diverse Unit Sizes</h4>
-              <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </div>
+            <Tile
+              title="Diverse Unit Sizes"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus nec ullamcorper mattis, pulvinar dapibus leo."
+            />
 
-            <div className="flex flex-col items-start justify-center p-6 border border-gray-200 rounded-lg shadow-sm bg-white h-auto">
-              <h4 className="text-gray-900 mb-2 text-xl font-semibold">Moving Assistance</h4>
-              <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </div>
+            <Tile
+              title="Moving Assistance"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus nec ullamcorper mattis, pulvinar dapibus leo."
+            />
 
           </div>
 
@@ -42,19 +40,15 @@ export default function Services() {
 
           <div className="flex flex-col gap-6 w-[300px]">
 
-            <div className="flex flex-col items-start justify-center p-6 border border-gray-200 rounded-lg shadow-sm bg-white h-auto">
-              <h4 className="text-gray-900 mb-2 text-xl font-semibold">Vehicle Storage</h4>
-              <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </div>
+            <Tile
+              title="Vehicle Storage"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus nec ullamcorper mattis, pulvinar dapibus leo."
+            />
 
-            <div className="flex flex-col items-start justify-center p-6 border border-gray-200 rounded-lg shadow-sm bg-white h-auto">
-              <h4 className="text-gray-900 mb-2 text-xl font-semibold">Top-Notch Security</h4>
-              <p className="text-gray-700 text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus nec ullamcorper mattis, pulvinar dapibus leo.
-              </p>
-            </div>
+            <Tile
+              title="Top-Notch Security"
+              description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Luctus nec ullamcorper mattis, pulvinar dapibus leo."
+            />
 
           </div>
 

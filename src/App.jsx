@@ -1,9 +1,11 @@
+import AboutUs from "./components/common/AboutUs";
 import Services from "./components/common/Services";
 
 function App() {
   return (
     <div>
-      <Services/>
+      {/* <Services/> */}
+      <AboutUs/>
     </div>
   );
 }
