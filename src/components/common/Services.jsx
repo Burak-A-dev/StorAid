@@ -1,5 +1,3 @@
-// ChatGPT användes för att stukturera koden så att det blir tydligare.
-
 export default function Services() {
   return (
     <div className="max-w-6xl mx-auto px-4 py-16">
