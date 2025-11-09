@@ -1,18 +1,22 @@
-import React, { useEffect} from "react";
+import React, { useEffect, useState} from "react";
 import Background from "../../assets/Testimonials.svg";
 import TestimonialsCard from "./TestimonialsCard";
 
 export default function Testimonials() {
 
+const [reviews, setReview] = useState([]);
+
 useEffect(() => {
   const fetchTestimonials = async () => {
     try {
       const response = await fetch(
-        "https://win25-jsf-assignment.azurewebsites.net/index.html"
+        "https://win25-jsf-assignment.azurewebsites.net/api/testimonials"
       );
 
       if (response.ok) {
-        console.log("Correct!");
+        const data = await response.json();
+        setReview(data)
+        console.log(data)
       } else {
         console.log("Fetch failed with status:", response.status);
       }
@@ -39,29 +43,19 @@ useEffect(() => {
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi non sodales augue. Phasellus eget elit gravida.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-4 mt-6">
-          <TestimonialsCard
-            name="John Doe"
-            companyName="Apple"
-            comment=" This service was amazing! Highly recommend to anyone This service was amazing! Highly recommend to anyone This service was amazing! Highly recommend to anyone This service was amazing! Highly recommend to anyone This service was amazing! Highly recommend to anyoneThis service was amazing! Highly recommend to anyone This service was amazing! Highly recommend to anyone ."
-            rating={5}
-            avatarUrl=""
-          />
-          <TestimonialsCard
-            name="John Doe"
-            companyName="Google"
-            comment="This service was amazing! Highly recommend to anyone.ing! Highly recommend to anyone.ing! Highly recommend to anyone.ing! Highly recommend to anyone.ing! Highly recommend to anyone.ing! Highly recommend to anyone."
-            rating={5}
-            avatarUrl=""
-          />
-          <TestimonialsCard
-            name="John Doe"
-            companyName="Tesla"
-            comment="This service was amazing! Highly recommend to anyone."
-            rating={5}
-            avatarUrl=""
-          />
-        </div>
+
+        <div className="flex flex-row flex-wrap justify-center gap-4 mt-8">
+        {reviews.map((item) => (
+        <TestimonialsCard
+        key={item.id}
+        name={item.name}
+        companyName={item.companyName}
+        comment={item.comment}
+        rating={item.rating}
+        avatarUrl={item.avatarUrl}
+        />
+      ))}
+      </div>
       </div>
     </div>
   );
