@@ -1,9 +1,11 @@
-import ChooseUs from "./components/common/ChooseUs";
+import PricingCard from "./components/common/PricingCard";
 
 function App() {
   return (
     <div>
-      <ChooseUs/>
+      <PricingCard
+      title="Small Unit"
+      price="100"/>
     </div>
   );
 }
