@@ -20,7 +20,7 @@ const TestimonialsCard = ({ name, companyName, comment, rating, avatarUrl }) => 
       </p>
       </div>
       
-      <div className="relative flex items-center justify-between mt-auto"> {/* Added mt-auto to push to bottom */}
+      <div className="relative flex items-center justify-between mt-auto">
         <div className="flex items-center gap-4"> 
           <div className="w-16 h-16 bg-gray-300 rounded-full overflow-hidden flex-shrink-0">
             {avatarUrl && (
