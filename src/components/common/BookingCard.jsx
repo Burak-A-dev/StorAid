@@ -2,8 +2,8 @@ import { FaCalendarMinus } from "react-icons/fa";
 
 const BookingCard = ({ title, description, created, imageUrl }) => {
   return (
-    <div className="bg-green-950 rounded-xl border border-gray-700 p-6 max-w-md mx-auto flex flex-col gap-4">
-      <div className="w-full h-48 bg-gray-300 rounded-lg overflow-hidden">
+    <div className="bg-green-950 rounded-sm border border-gray-700 p-6 max-w-md mx-auto flex flex-col gap-4 mt-50">
+      <div className="w-full h-48 bg-gray-300 rounded-sm overflow-hidden">
         {imageUrl && (
           <img
             src={imageUrl}
@@ -15,7 +15,7 @@ const BookingCard = ({ title, description, created, imageUrl }) => {
 
       <div className="flex items-center gap-2 text-gray-300 text-sm hover:bg-[#f1ffea]">
         <FaCalendarMinus className="text-xl" />
-        <span>
+        <span className="text-gray-300">
         {created
         ? new Date(created).toLocaleDateString("en-US", {
         year: "numeric",
