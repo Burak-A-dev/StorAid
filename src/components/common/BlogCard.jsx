@@ -2,7 +2,8 @@ import { FaCalendarMinus } from "react-icons/fa";
 
 const BlogCard = ({ title, description, created, imageUrl }) => {
   return (
-    <div className="bg-green-950 rounded-sm border border-gray-700 p-6 flex flex-col gap-4 w-80 flex-1">
+    <div className="group bg-green-950 hover:bg-[#f1ffea] transition-colors rounded-sm border border-gray-700 p-6 flex flex-col gap-4 w-80 flex-1">
+      
       <div className="w-full h-48 bg-gray-300 rounded-sm overflow-hidden">
         {imageUrl && (
           <img
@@ -13,9 +14,9 @@ const BlogCard = ({ title, description, created, imageUrl }) => {
         )}
       </div>
 
-      <div className="flex items-center gap-2 text-gray-300 text-sm hover:bg-[#f1ffea]">
-        <FaCalendarMinus className="text-xl" />
-        <span className="text-gray-300">
+      <div className="flex items-center gap-2 text-gray-300 text-sm">
+        <FaCalendarMinus className="text-xl group-hover:text-green-950 transition-colors" />
+        <span className="text-gray-300 group-hover:text-green-950 transition-colors">
           {created
             ? new Date(created).toLocaleDateString("en-US", {
                 year: "numeric",
@@ -26,15 +27,19 @@ const BlogCard = ({ title, description, created, imageUrl }) => {
         </span>
       </div>
 
-      <h3 className="text-2xl font-bold text-white">{title}</h3>
+      <h3 className="text-2xl font-bold text-white group-hover:text-green-950 transition-colors">
+        {title}
+      </h3>
 
-      <p className="text-gray-300 line-clamp-4">{description}</p>
+      <p className="text-gray-300 group-hover:text-green-950 transition-colors line-clamp-4">
+        {description}
+      </p>
 
       <a
         href="#"
         className="mt-auto inline-flex items-center text-yellow-500 hover:text-yellow-400 font-semibold transition duration-150 text-lg"
       >
-        Read more &rarr;
+        Read more →
       </a>
     </div>
   );
