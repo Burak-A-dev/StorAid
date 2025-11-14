@@ -1,9 +1,9 @@
-import Blog from "./components/common/Blog";
+import Subscribe from "./components/common/Subscribe";
 
 function App() {
   return (
     <div>
-      <Blog/>
+      <Subscribe/>
     </div>
   );
 }
