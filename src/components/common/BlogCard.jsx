@@ -1,3 +1,5 @@
+/* ChatGPT användes för att få till hover effekten på kortet med hjälp av group */
+
 import { FaCalendarMinus } from "react-icons/fa";
 
 const BlogCard = ({ title, description, created, imageUrl }) => {
