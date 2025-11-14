@@ -44,7 +44,7 @@ useEffect(() => {
         </p>
 
 
-        <div className="flex flex-row flex-wrap justify-center gap-4 mt-8">
+      <div className="flex flex-row flex-wrap justify-center gap-4 mt-8">
         {reviews.map((item) => (
         <TestimonialsCard
         key={item.id}
