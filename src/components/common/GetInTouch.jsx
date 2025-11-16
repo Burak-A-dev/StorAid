@@ -14,9 +14,6 @@ export default function GetInTouch() {
 
         const dataToSend = { email, name, phoneNumber, subject, comment };
 
-        // Log the data before sending
-        console.log("Sending data:", dataToSend);
-
         fetch("https://win25-jsf-assignment.azurewebsites.net/api/contact", {
             method: "POST",
             headers: { "Content-Type": "application/json" },

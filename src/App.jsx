@@ -1,9 +1,9 @@
-import GetInTouch from "./components/common/GetInTouch";
+import FindUs from "./components/common/FindUs";
 
 function App() {
   return (
     <div>
-      <GetInTouch/>
+      <FindUs/>
     </div>
   );
 }
