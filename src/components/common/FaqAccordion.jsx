@@ -3,7 +3,7 @@
 import { useState, useRef, useEffect } from "react";
 import { IoIosArrowDown } from "react-icons/io";
 
-const Accordion = ({ title, content }) => {
+const Accordion = ({ title, description }) => {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef(null);
   const [height, setHeight] = useState(0);
@@ -34,7 +34,7 @@ const Accordion = ({ title, content }) => {
         style={{ height: height }}
         className="px-5 overflow-hidden transition-all duration-300 bg-white"
       >
-        <div className="py-3">{content}</div>
+        <div className="py-3 text-lg">{description}</div>
       </div>
     </div>
   );
