@@ -1,12 +1,11 @@
-import CTAButton from "./CTAButton";
+import CTAButton from "../common/CTAButton";
 import { FaPhoneAlt } from 'react-icons/fa';
-import Tile from "./Tile";
+import Tile from "../common/Tile";
 
 export default function AboutUs({button}) {
   return (
-    <div>
+    <div className="mt-10">
         <div className='flex flex-row gap-10 p-4 align-center justify-center items-center mt-6'>
-        {/* Left side */}
  <div className="flex flex-col items-center">
   <div className="bg-gray-300 w-120 h-80 border-4 border-gray-100"></div>
 
@@ -26,13 +25,11 @@ export default function AboutUs({button}) {
   </div>
 </div>
 
-        {/* Right side */}
         <div className="flex flex-col gap-1 w-130 self-center p-2 h-105">
             <h3 className="text-amber-400 font-bold">About Us</h3>
             <h2 className="text-green-950 text-4xl font-bold">Providing a Safe Space for Your Treasured Items</h2>
             <p className="text-green-950 text-base/4 mb-4 mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque molestie nisl sed dui lacinia gravida. Nulla quis nulla leo. Mauris ac blandit nisi, non sodales augue. Phasellus eget elit gravida.</p>
 
-            {/* Vision - Mission */}
             <div className='flex flex-row gap-4'>
 
             <Tile

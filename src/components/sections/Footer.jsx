@@ -1,5 +1,3 @@
-import React from 'react'
-
 export default function Footer() {
   return (
     <div className="flex justify-around items-center bg-green-950 text-white h-18 p-3 text-xs">

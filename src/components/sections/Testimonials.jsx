@@ -1,6 +1,6 @@
 import React, { useEffect, useState} from "react";
 import Background from "../../assets/Testimonials.svg";
-import TestimonialsCard from "./TestimonialsCard";
+import TestimonialsCard from "../common/TestimonialsCard";
 
 export default function Testimonials() {
 

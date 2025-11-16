@@ -1,4 +1,4 @@
-import Tile from "./Tile";
+import Tile from "../common/Tile";
 
 export default function Services() {
   return (

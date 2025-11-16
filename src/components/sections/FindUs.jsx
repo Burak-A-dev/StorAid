@@ -1,4 +1,4 @@
-import SocialButtons from './SocialButtons';
+import SocialButtons from '../common/SocialButtons';
 import { FaPhoneAlt } from 'react-icons/fa';
 import { PiEnvelope } from "react-icons/pi";
 import icon from '../../assets/find-img.svg';

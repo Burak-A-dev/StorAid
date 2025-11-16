@@ -1,4 +1,4 @@
-import PricingCard from "./PricingCard";
+import PricingCard from "../common/PricingCard";
 
 export default function Pricing() {
   return (

@@ -6,7 +6,7 @@ import icon5 from '../../assets/Logoipsum-5.svg';
 
 export default function Logos() {
   return (
-    <div className="flex flex-row justify-center items-center gap-8 h-30 bg-yellow-50">
+    <div className="flex flex-row justify-center items-center gap-8 h-30 bg-yellow-50 mt-20">
       <img className='h-16' src={icon1} alt="Logoipsum logo" />
       <img className='h-16' src={icon2} alt="Logoipsum logo" />
       <img className='h-16' src={icon3} alt="Logoipsum logo" />

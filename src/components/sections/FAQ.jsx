@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import FaqAccordion from "./FaqAccordion";
+import FaqAccordion from "../common/FaqAccordion";
 
 export default function FAQ() {
 
@@ -48,10 +48,3 @@ export default function FAQ() {
     </div>
   )
 }
-
-/*
-"id": 4,
-    "title": "Can I change the size of my storage unit if I need more space?",
-    "description": "Absolutely. You can upgrade or downsize your unit at any time based on availability. Our team will help you find the right size to fit your changing storage needs without hassle."
-  }, 
- */
